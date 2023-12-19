@@ -8,13 +8,41 @@
 ## 기초 문법
 ```
 1. 변수 : 상자안에 값을 담는 개념
-- var
-- let
-- const
+- var : 변수 변화에 유동적 (ex) 정의 a = 1 결과값 1 / 정의 a = 2 결과 값 2) 
+- let : 변수를 만들때 사용하는 일반적인 방법
+- const : 유일한 변수 값을 지정할 때 사용
 ```
 
 ```
 2. 함수
+- 들어오는 값 -> 함수 -> 결과
+ex) 사용 방법
+    정의 :     function myFunction(x) {
+                 let temp = 2*x +3;
+                 return temp;
+                }
+    실행 :      myfunction(1)
+    결과값 :    5
+
+    정의 :     function add(x,y) {
+                 let temp = x + y;
+                 return temp;
+                }
+    실행 :      add(1,2)
+    결과값 :    3
+
+특징 : 입력, 출력 없을 수 있음
+ex) 정의 :      function fly() {
+                  openWings();
+                    while (true) {
+                      moveWings();
+                     }
+                }
+
+    실행 :      fly()
+    -> 코드를 묶어주기 위해서 사용하기도 함
+
+    함수 = 마법 = 코드 묶음
 ```
 
 ```
