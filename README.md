@@ -47,8 +47,24 @@ ex) 정의 :      function fly() {
 
 ```
 3. 조건문
+if(money > 5000) {
+  rideTaxi();   (참일때의 조건)
+} else {
+  walk();    (거짓일때의 조건)
+}
+
+조건문 확장
+if(money > 5000) {
+  rideTaxi();   (참일때의 조건)
+} else if(money > 2000) {
+  rideBus();    (거짓일때 그다음 조건의 참일때)
+}else{
+  walk();  (조건들이 다 거짓일때)
+}
 ```
 
 ```
 4. 반복문
 ```
+
+*console.log();  = 메시지 출력
