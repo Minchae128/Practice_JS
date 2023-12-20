@@ -65,6 +65,19 @@ if(money > 5000) {
 
 ```
 4. 반복문
+for (let i = 0; i < 10; i++) {
+  console.log("나무 찍기" + i);
+}
+
+let i = 0; 변수 i = 0 초기값 설정
+i < 10 조건식 설정
+i++ 증가 반복될때마다 증가  
+
+myArray = [1,2,3,4,5]
+
+myArray.forEach(element => {
+  console.log("나무 찍기" + element);
+});
 ```
 
 *console.log();  = 메시지 출력
