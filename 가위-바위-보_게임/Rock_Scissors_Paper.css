@@ -21,6 +21,10 @@ body{
     justify-content: center;
     
 }
+.reset{
+    display:flex;
+    justify-content: center;
+}
 .reset_end{
     display:flex;
     justify-content: center;
