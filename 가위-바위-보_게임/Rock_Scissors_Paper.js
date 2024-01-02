@@ -9,9 +9,10 @@ let reset_btn = document.getElementById("reset_btn");
 let end_btn = document.getElementById("end_btn");
 
 let imgArray= new Array();
-imgArray[0]="paper.jpg";
-imgArray[1]="rock.jpg";
-imgArray[2]="scissors.jpg";
+imgArray[0]="C:/Users/shinpardon/IdeaProjects/Practice_JS/Practice_JS/가위-바위-보_게임/img/paper.jpg";
+imgArray[1]="C:/Users/shinpardon/IdeaProjects/Practice_JS/Practice_JS/가위-바위-보_게임/img/rock.jpg";
+imgArray[2]="C:/Users/shinpardon/IdeaProjects/Practice_JS/Practice_JS/가위-바위-보_게임/img/scissors.jpg";
+
 
 let a;
 let userscore=0;
