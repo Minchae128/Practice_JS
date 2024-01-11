@@ -13,3 +13,6 @@
   4. 구구단 출력 값은 페이지에 출력
   5. 구구단 출력 후 페이지를 초기화 하고 싶다면, 초기화 버튼으로 초기화 할 수 있다. 
 ```
+
+## 실행
+<img src = "https://github.com/Minchae128/Practice_JS/assets/122027566/2ee6effb-4a70-43b3-b779-b4dde2d36878" width="60%" height="60%">
