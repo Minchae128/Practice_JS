@@ -17,4 +17,22 @@ document.addEventListener('DOMContentLoaded', function () {
     let operator = '';
 
 
+    //이벤트 리스너 추가
+    buttons.forEach(button => {
+        button.addEventListener('click', function (){
+            const buttonValue = this.textContent;
+
+            if (button.dataset.type === 'ac') {
+                clearCalculator();
+              } else if (button.dataset.type === 'operator') {
+                handleOperator(buttonValue);
+              } else if (button.dataset.type === 'result') {
+                calculateResult();
+              } else {
+                appendNumber(buttonValue);
+              }
+        
+              updateDisplay();
+            });
+          });
 })
