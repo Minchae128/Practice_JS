@@ -37,11 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   // 나머지 함수들
+
+  // 입력값을 초기화 해주는 함수
   function clearCalculator() {
     currentInput = '';
     previousInput = '';
     operator = '';
-  } // 입력값을 초기화 해주는 함수
+  } 
 
 });
 })
