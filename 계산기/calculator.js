@@ -18,21 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     //이벤트 리스너 추가
-    buttons.forEach(button => {
-        button.addEventListener('click', function (){
-            const buttonValue = this.textContent;
+    buttons.forEach(button => { // 모든 버튼에 대해 반복하는 forEach루프 'buttons'는 HTML문서에 선택한 계산기 버튼들의 NodeList
+        button.addEventListener('click', function (){ // 각 버튼에 클릭 이벤트 리스너 추가 즉, 버튼이 클릭되었을때 실행할 함수 등록
+            const buttonValue = this.textContent; // 클릭된 버튼의 텍스트 내용을 가져와서 'buttonValue'변수에 저장. this는 클릭된 버튼임
 
-            if (button.dataset.type === 'ac') {
+            if (button.dataset.type === 'ac') { // 클릭된 버튼의 속성이 'ac'일때, clearCalculator함수 호출
                 clearCalculator();
-              } else if (button.dataset.type === 'operator') {
+              } else if (button.dataset.type === 'operator') { // 클릭된 버튼의 속성이 'operator'일때, handleOperator함수 호출 / 이 함수는 현재 입력값과 연산자 관리
                 handleOperator(buttonValue);
-              } else if (button.dataset.type === 'result') {
+              } else if (button.dataset.type === 'result') { // 클릭된 버튼의 속성이 'result'일때, calculateResult함수 호출 / 이 함수는 계산을 수행하고 결과를 업데이트 함
                 calculateResult();
-              } else {
+              } else { // 위 조건들이 해당하지 않으면, 숫자 버튼이 클릭되었을 경우 'appendNumber'함수를 호출하여 현재 입력값에 숙자를 추가함.
                 appendNumber(buttonValue);
               }
         
-              updateDisplay();
+              updateDisplay(); // 각 버튼 클릭 후에는 화면을 업데이트하기 위해 'updateDisplay' 함수를 호출합니다. 이 함수는 현재 입력 값을 화면에 표시함.
             });
           });
 })
