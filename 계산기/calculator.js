@@ -45,5 +45,17 @@ document.addEventListener('DOMContentLoaded', function () {
     operator = '';
   } 
 
+  // 입력값 유무를 확인해주는 함수
+  function handleOperator(value) {
+    if (currentInput !== '') { // 현재 입력값이 비어있지 않다면
+      previousInput = currentInput; // 현재 입력 값을 이전 입력값으로 옮기고
+      currentInput = ''; // 현재 입력 값 초기화
+      operator = value; // 선택된 연산자 설정
+      // value는 연산자(+, -, *, /)
+    } else if (previousInput !== '') { // 현재 입력 값이 비어있고, 이전 입력값이 존재한다면
+      operator = value; // 선택된 연산자만 업데이트
+    }
+  }
+
 });
 })
