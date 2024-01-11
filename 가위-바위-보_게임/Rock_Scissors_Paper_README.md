@@ -13,3 +13,6 @@
   4. 승패는 팝업창으로 알 수 있으며, 컴퓨터-사용자의 승수가 점수로 환산된다.
   5. 게임을 초기화 하고 싶다면, 다시시작 버튼으로 초기화 할 수 있다. 
 ```
+
+## 실행
+<img src = "https://github.com/Minchae128/Practice_JS/assets/122027566/2b29e397-8f3e-406c-aa3c-2b7be712c461" width="50%" height="50%">
