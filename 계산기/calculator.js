@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //변수 선언
     const displayInput = document.querySelector('.input');
     const buttons = document.querySelectorAll('.numBtn, .operator, .result, .ac');
-    let cuttentInput = '';
+    let currentInput= '';
     let previousInput = '';
     let operator = '';
 
