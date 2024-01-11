@@ -100,5 +100,12 @@ function performCalculation(num1, num2, op) {
     }
   }  
 
+// 현재 입력 값을 디스플레이에 업데이트하는 함수
+function updateDisplay() {
+    // displayInput은 HTML 요소를 나타내며, 그의 textContent를 현재 입력 값으로 설정
+    // 만약 현재 입력 값이 비어있다면 '0'으로 표시
+    displayInput.textContent = currentInput || '0';
+  }  
+
 });
 })
