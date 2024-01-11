@@ -77,5 +77,11 @@ function calculateResult() {
     }
   }  
 
+// 숫자 버튼이 클릭되었을 때 호출되는 함수
+function appendNumber(value) {
+    // 현재 입력 값에 클릭된 숫자를 추가
+    currentInput += value;
+  }
+  
 });
 })
