@@ -34,5 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
         
               updateDisplay(); // 각 버튼 클릭 후에는 화면을 업데이트하기 위해 'updateDisplay' 함수를 호출합니다. 이 함수는 현재 입력 값을 화면에 표시함.
             });
-          });
+
+
+  // 나머지 함수들
+  function clearCalculator() {
+    currentInput = '';
+    previousInput = '';
+    operator = '';
+  } // 입력값을 초기화 해주는 함수
+
+});
 })
