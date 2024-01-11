@@ -83,5 +83,22 @@ function appendNumber(value) {
     currentInput += value;
   }
   
+// 두 숫자와 연산자를 이용하여 계산을 수행하고 결과를 반환하는 함수
+function performCalculation(num1, num2, op) {
+    // switch 문을 사용하여 연산자에 따라 다른 계산을 수행
+    switch (op) {
+      case '+':
+        return num1 + num2; // 덧셈
+      case '-':
+        return num1 - num2; // 뺄셈
+      case 'x':
+        return num1 * num2; // 곱셈
+      case '/':
+        return num1 / num2; // 나눗셈
+      default:
+        return num2; // 연산자가 없거나 유효하지 않으면 두 번째 숫자 반환
+    }
+  }  
+
 });
 })
