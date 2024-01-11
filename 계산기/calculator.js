@@ -57,5 +57,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+// 등호(=) 버튼이 클릭되었을 때 호출되는 함수
+function calculateResult() {
+    // 현재 입력 값이 있고, 이전 입력 값과 선택된 연산자가 모두 존재하는 경우에만 계산 수행
+    if (currentInput !== '' && previousInput !== '' && operator !== '') {
+      // 이전 입력 값과 현재 입력 값, 선택된 연산자를 이용하여 계산을 수행
+      const result = performCalculation(
+        parseFloat(previousInput),
+        parseFloat(currentInput),
+        operator
+      );
+  
+      // 계산 결과를 문자열로 변환하여 현재 입력 값에 저장
+      currentInput = result.toString();
+  
+      // 이전 입력 값과 선택된 연산자를 초기화하여 다음 계산을 위해 준비
+      previousInput = '';
+      operator = '';
+    }
+  }  
+
 });
 })
